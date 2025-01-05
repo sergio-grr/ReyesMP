@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurassic Game</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: yellow;
+            text-transform: uppercase;
+            font-family: "Impact", sans-serif;
+            margin-top: 0.5rem;
+            opacity: 0;
+            animation: fadeInOrder 1s forwards 1s;
+        }
+
+        .welcome-message {
+            font-size: 1.5rem;
+            margin: 20px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInOrder 1s forwards 2s;
+        }
+
+        .game-description {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInOrder 1s forwards 3s;
+        }
+
+        .play-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: red;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid yellow;
+            cursor: pointer;
+            opacity: 0;
+            animation: fadeInOrder 1s forwards 4s;
+        }
+
+        .play-button:hover {
+            background-color: yellow;
+            color: red;
+        }
+
+        @keyframes fadeInOrder {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.jpg" alt="Jurassic Game Logo">
+        <h1>Jurassic Game</h1>
+    </header>
+
+    <div class="welcome-message">
+        ¡Bienvenida a Jurassic Game! Aquí podrás obtener tu regalo de Reyes Magos. Pero primero...
+    </div>
+
+    <div class="game-description">
+        ¡Descubre al dinosaurio escondido detrás de las cajas de regalo! Tienes tres cajas para elegir. Haz clic en una para ver si has encontrado al dinosaurio.
+    </div>
+
+    <a href="https://sergio-grr.github.io/gameMP/" class="play-button">Jugar Ahora</a>
+</body>
+</html>
